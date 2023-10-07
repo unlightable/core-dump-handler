@@ -1,0 +1,57 @@
+apiVersion: v1
+entries:
+  core-dump-handler:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description:  Fix event sourcing setup in chart templates
+          links:
+            - name: GitHub PR
+              url: https://github.com/IBM/core-dump-handler/pull/127
+        - kind: fixed
+          description: Downgrade to 0.31.0
+          links:
+            - name: GitHub Issue
+              url: https://github.com/IBM/core-dump-handler/issues/126
+            - name: GitHub PR
+              url: https://github.com/IBM/core-dump-handler/pull/128
+        - kind: fixed
+          description:  Handle pullSecrets inside daemonset.yaml
+          links:
+            - name: GitHub PR
+              url: https://github.com/IBM/core-dump-handler/pull/130
+      artifacthub.io/images: |
+        - name: core-dump-handler
+          image: quay.io/icdh/core-dump-handler:v8.10.0
+      artifacthub.io/license: MIT
+      artifacthub.io/signKey: |
+        fingerprint: BED079E67FD431E45301B1C9949E671B46AC8A34
+        url: https://keybase.io/antonwhalley/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v8.10.0
+    created: "2023-10-07T19:49:46.803349943+05:00"
+    description: A Helm chart for deploying a core dump management system to Kubernetes
+    digest: acfd71ad5ac19140394e187f159c680cf3a145ca2982d69720e35e6a7749295d
+    icon: https://raw.githubusercontent.com/No9/core-dump-handler/master/assets/handle-with-care-svgrepo-com.svg
+    keywords:
+    - coredump
+    - post-mortem
+    - observability
+    maintainers:
+    - email: anton@venshare.com
+      name: No9
+      url: https://github.com/No9/
+    - email: tim@buchwaldt.ws
+      name: timbuchwaldt
+      url: https://github.com/timbuchwaldt/
+    - email: thomas.jungblut@redhat.com
+      name: tjungblu
+      url: https://blog.thomasjungblut.com/
+    name: core-dump-handler
+    sources:
+    - https://github.com/ibm/core-dump-handler
+    type: application
+    urls:
+    - https://unlightable.github.io/core-dump-handler/core-dump-handler-8.10.0-optclaimref.tgz
+    version: 8.10.0-optclaimref
+generated: "2023-10-07T19:49:46.798004592+05:00"
